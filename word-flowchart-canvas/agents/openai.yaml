@@ -1,0 +1,5 @@
+interface:
+  display_name: "Word Flowchart Canvas / 论文图画布"
+  short_description: "用 Word 绘图画布、形状和连接箭头生成论文流程图。"
+  default_prompt: "Use $word-flowchart-canvas to create a Word-editable thesis flowchart with a drawing canvas, shapes, connector arrows, and properly spaced 是/否 branch labels."
+
