@@ -1,2 +1,46 @@
-# codex-skill-word-flowchart-canvas
-一个用于生成论文流程图的 Codex Skill，可在 Microsoft Word 中创建真正可编辑的绘图画布、形状、判断菱形、连接箭头和“是/否”分支标签，适合毕业论文、课程设计和技术文档中的流程图绘制。 A Codex skill for creating thesis-style flowcharts in Microsoft Word using editable Drawing Canvas objects, shapes, decision diamonds, connector arrows, and properly placed Yes/No branch labels.
+# Word Flowchart Canvas / 论文图画布
+
+Codex skill for generating thesis-style Microsoft Word flowcharts as editable Word Drawing Canvas content.
+
+This skill is useful when a paper or thesis requires flowcharts drawn with:
+
+- Word Drawing Canvas
+- Rounded rectangle process nodes
+- Diamond decision nodes
+- Connector arrows
+- `是/否` labels placed beside branch arrows
+- Elbow-style return connectors that avoid crossing shapes
+
+## Skill
+
+The skill folder is:
+
+```text
+word-flowchart-canvas/
+```
+
+Install it by copying `word-flowchart-canvas` into your Codex skills directory:
+
+```text
+C:\Users\<you>\.codex\skills\word-flowchart-canvas
+```
+
+## Included Template
+
+The skill includes an approved Word template:
+
+```text
+word-flowchart-canvas/assets/wardrobe_flowchart_canvas_spaced_logic_labels.docx
+```
+
+It is a real Word drawing canvas with editable shapes and connectors, not an inserted image.
+
+## Script
+
+On Windows with Microsoft Word installed, generate the sample flowchart with:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File ".\word-flowchart-canvas\scripts\create-wardrobe-flowchart.ps1" -OutPath ".\output.docx"
+```
+
+The script uses Microsoft Word COM automation.
